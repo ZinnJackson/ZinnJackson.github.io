@@ -119,6 +119,14 @@
     .about-copy p { margin: 0 0 18px; color: #59635c; font-size: 15px; line-height: 1.8; }
     .note { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
     .note span:last-child { text-align: right; }
+    .projects { padding: 35px 0 78px; border-top: 1px solid var(--line); }
+    .projects-heading { margin-bottom: 27px; }
+    .projects-heading .eyebrow { margin-bottom: 8px; }
+    .project-card { display: grid; grid-template-columns: 50px 1fr 25px; align-items: center; gap: 18px; padding: 23px 20px; border: 1px solid var(--line); background: rgba(255,255,255,.25); }
+    .project-number { color: var(--green); font: italic 17px var(--serif); }
+    .project-card h3 { margin: 0 0 6px; font: 400 21px var(--serif); letter-spacing: -.02em; }
+    .project-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .project-arrow { color: var(--green); font-size: 18px; }
     footer { padding: 24px 0 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
     .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
     footer a { color: var(--green); text-underline-offset: 3px; }
@@ -134,6 +142,9 @@
       .art { width: min(76%, 310px); justify-self: center; }
       .about { grid-template-columns: 1fr; gap: 22px; padding: 34px 0 50px; }
       h2 { font-size: 31px; }
+      .projects { padding: 30px 0 55px; }
+      .project-card { grid-template-columns: 28px 1fr 18px; gap: 10px; padding: 18px 12px; }
+      .project-card h3 { font-size: 18px; }
     }
     @media (max-width: 390px) { nav { gap: 11px; } nav a { font-size: 11px; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
@@ -145,6 +156,7 @@
       <a class="wordmark" href="#top" aria-label="Jackson Zinn home">Jackson Zinn<span aria-hidden="true">.</span></a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="https://github.com/ZinnJackson" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </nav>
     </header>
@@ -172,6 +184,23 @@
           <p>Jackson Zinn is a Junior History major at the Catholic University of America. He has lived in several different places, but most recently lived in Fairfax, Virginia. Some of his favorite activities include skiing, playing pickleball, and reading.</p>
           <div class="note"><span>Currently building this little corner</span><span>Last updated October 2026</span></div>
         </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="projects-heading">
+          <div>
+            <div class="eyebrow">Selected work</div>
+            <h2 id="projects-title">Projects</h2>
+          </div>
+        </div>
+        <article class="project-card">
+          <span class="project-number" aria-hidden="true">01</span>
+          <div>
+            <h3>Assignment 3: JavaScript Game</h3>
+            <p>Project details coming soon.</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
       </section>
     </main>
 
